@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Registration Form</title>
+    <style>
+      body 
+      {
+          background-image: url('./../static/img/bg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+      }
+      .reg-form  
+      {
+        background-color: rgb(240, 248, 255, 60%) ;
+        height: 50%;
+        width: 50%;
+        margin-top : 5%;
+        margin-right: 7%;
+      }
+    </style>
+</head>
+<body>
+      <div class="container reg-form" >
+      <h1 style = "padding-top: 2%; text-align:center">Welcome to BookReads!</h1>
+      <h2 style = "padding-top: 2%; text-align:center">Registration Form</h2>
+        <form action="{{ url_for('login') }}"  style="padding-bottom: 2%;"  method="POST">
+            <div class="form-group">
+              <label>Name</label>
+              <input required type="text" name = 'name' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name"> 
+            </div>
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input required type="email" class="form-control" name="email" placeholder="Enter email" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input required type="password" class="form-control" name = "pswd" placeholder="Enter password" id="pwd">
+            </div>
+            <center><button type="submit" class="btn btn-success">Register</button></center>
+          </form>
+    </div>
+</body>
+</html>
