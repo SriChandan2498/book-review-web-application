@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css')}}">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    </head>
+<body>
+
+<!-- <img src="{{ url_for('static', filename='images/registration-banner.png')}}"> -->
+<div class="container">
+    <h1> Login Page</h1>
+    </div>
+<form action="{{ url_for('login') }}" method="POST">
+    <div class="container">
+    {% if flag %}
+    <div class="error" style="color: red;">*Username or password you entered are incorrect. Please try again        </div>
+    {%else%}
+        <div class="error"></div>
+    {% endif %}
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" id="email" required><br>
+
+   
+
+    <label for="pwd"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pwd" id="pwd" required>
+
+    
+        <button class="btn btn-info" type="submit">Submit</button>
+    </div>
+</form> 
+<div class="container">
+    <h6>New to the website? <a href="{{ url_for('forms')}}">Register</a></h6>
+    </div>
+
+</body>
+</html>
