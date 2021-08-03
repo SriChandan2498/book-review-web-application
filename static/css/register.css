@@ -1,0 +1,252 @@
+body{
+    background-image: url("https://us.123rf.com/450wm/neirfy/neirfy1806/neirfy180600295/103601719-flat-lay-frame-of-old-books-on-blue-background-with-copy-space-retro-toned.jpg?ver=6");
+    /* background-repeat: no-repeat; */
+    background-size: 100%;
+  }
+  .container {
+      margin-top: 10%;
+      margin-bottom: 2%;
+      margin-left: 1%;
+      /* background-color: white; */
+      /* background-image: url("https://us.123rf.com/450wm/neirfy/neirfy1806/neirfy180600295/103601719-flat-lay-frame-of-old-books-on-blue-background-with-copy-space-retro-toned.jpg?ver=6"); */
+      /* background-repeat: no-repeat; */
+      /* visibility:initial; */
+      /* border: 1px solid black; */
+  }
+  .shelf{
+    padding: 3px;
+    
+
+    margin-right:10%;
+    /* margin-top:10%; */
+    background-color:red;
+
+  }
+  .container1 {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+    margin-right:15%;
+    background-color: #52b5d3;
+    /* background-color: white; */
+    /* background-image: url("https://s3.envato.com/files/8389c03c-42cb-482f-bcb8-d2a19adaf1eb/inline_image_preview.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* visibility:initial; */
+    /* border: 1px solid black; */
+}
+.container2 {
+    /* margin-top: 18%; */
+    margin-bottom: 2%;
+    margin-left: 15%;
+    margin-right:15%;
+    background-color: #52b5d3;
+    /* background-color: #68cd9f; */
+    /* background-color: white; */
+    /* background-image: url("https://s3.envato.com/files/8389c03c-42cb-482f-bcb8-d2a19adaf1eb/inline_image_preview.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* visibility:initial; */
+    /* border: 1px solid black; */
+}
+  
+  select{
+    padding: 10px;
+  }
+  
+    h3{
+      margin-left:45%;
+      color: rgb(5, 5, 68);
+      /* margin-right: auto; */
+    }
+  
+    th,td,tr{
+      color: white;
+    }
+    
+    p{
+      margin-left: 39%;
+      color: white;
+    }
+    /* Full-width input fields */
+    input[type=text], input[type=password], input[type=email] {
+      width: 70%;
+      padding: 10px;
+      margin: 2px 0 0px 0;
+      margin-left: 10px;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+  
+    u{
+      color: white;
+    }
+  
+    .footer{
+      padding: 10px;
+      /* background-color: white; */
+    }
+  
+    u:hover{
+      color: red;
+    }
+  
+    label{
+      font-size: 150%;
+      color: white;
+      margin-left: 20px;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Overwrite default styles of hr */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+    
+    /* Set a style for the submit button */
+    .registerbtn {
+      background-color: #080427;
+      color: white;
+      padding: 10px 12px;
+      margin: 8px 0;
+      margin-left: auto;
+      margin-right: auto;
+      border: none;
+      cursor: pointer;
+      width: 10%;
+      opacity: 0.9;
+    }
+    
+    .registerbtn:hover {
+      opacity: 1;
+    }
+  
+    .lgn{
+      margin-top: 10px;
+      margin-left: 42%;
+      /* margin-right: auto; */
+      /* font-size: 20%; */
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+.registerform{
+    color: black;
+    background-color: #68cd9f;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 2px solid black;
+    padding: 50px;
+    align-items: center;
+    height: 550px;
+}
+
+#lab{
+    font-size: 25px;
+}
+input{
+    padding: 5px 0px;
+    width: 100%;
+}
+
+#shelfbutton{
+    width: 50%;
+    margin-left: 25%;
+}
+
+img{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.navitem{
+    padding: 3px 0px;
+    display: inline-block;
+    color: white;
+}
+
+.tableitems{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 2vw;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+/* body {
+    background: #222225;
+    color: white
+}
+
+h1,
+p {
+    text-align: center
+}
+
+h1 {
+    margin-top: 150px
+}
+
+p {
+    font-size: 1.2rem
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 14px
+    }
+
+    p {
+        font-size: 12px
+    }
+} */
+
+.checked {
+    color: orange;
+    background-color:white;
+    }
+.login{
+  background-color: rgb(77, 34, 178);
+  color: white;
+}

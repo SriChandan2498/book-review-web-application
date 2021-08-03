@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Registration Form</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css')}}">
+        
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css')}}"> -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css')}}">
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     </head>
 <body>
 
 <!-- <img src="{{ url_for('static', filename='images/registration-banner.png')}}"> -->
-<div class="container">
-    <h1> Login Page</h1>
-    </div>
+<div class="container1">
+    <h1 style="color: red; text-align:center;"> Login Page</h1>
+    
 <form action="{{ url_for('login') }}" method="POST">
-    <div class="container">
+    <!-- <div class="container1"> -->
     {% if flag %}
     <div class="error" style="color: red;">*Username or password you entered are incorrect. Please try again        </div>
     {%else%}
         <div class="error"></div>
     {% endif %}
 
-    <label for="email"><b>Email</b></label>
+    <label for="email"><b>Email</b></label><br>
     <input type="email" placeholder="Enter Email" name="email" id="email" required><br>
 
    
 
-    <label for="pwd"><b>Password</b></label>
+    <label for="pwd"><b>Password</b></label><br>
     <input type="password" placeholder="Enter Password" name="pwd" id="pwd" required>
 
+    <br>
+    <br>
     
-        <button class="btn btn-info" type="submit">Submit</button>
-    </div>
+        <button class="btn btn-primary btn-lg" type="submit">Login</button>
+    
+   
 </form> 
-<div class="container">
-    <h6>New to the website? <a href="{{ url_for('forms')}}">Register</a></h6>
-    </div>
-
+<!-- <div class="container"> -->
+    <h4>click here <a href="{{ url_for('forms')}}">Register</a></h4>
+    <!-- </div> -->
+</div>
 </body>
 </html>
