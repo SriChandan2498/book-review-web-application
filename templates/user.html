@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/search.js')}}" ></script>
+    <title>User page</title>
+    <style>
+      body 
+      {
+        background-image: url('./../static/img/photo-1507842217343-583bb7270b66.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+      .userpage
+      {
+        background-color: hsla(208, 100%, 97%,0.9) ;
+        height: 10%;
+        width: 97.5%;
+        margin-top : 1.5%;
+        /* margin-right: 2%; */
+      }
+      .mynav
+      {
+          border:  2px solid #f0f8ff99;
+      }
+      table
+      {
+        text-align: center;
+      }
+      h4,p
+      {
+        text-align : center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mynav">
+      <a class="navbar-brand" href="#">BookReads</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav navbar-right ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid userpage">
+      <div class="row">
+        <div class="col"> 
+      <p></p>
+      <h5>Search for your favorite book here...</h5>
+      <form  action="javascript:searchbook()" name="search" method="POST">
+        <div class="form-group">
+          <select name="books" id="books">
+            <option value="isbn">ISBN</option>
+            <option value="title">Title</option>
+          </select>
+          <input type=text style="width: 70%;" name="searchname" id="searchname" />
+          <button class="btn btn-secondary" type="submit">Submit</button>
+        </div>
+      </form>
+      <table class="table table-hover table-light" width=90%>
+          <div id="tablebody"></div>
+            <thead class="thead-dark">
+              <tr>
+                <th id="tableheader"></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <br><br>
+          <div id="bookdetils"></div>
+        </div>
+      
+      </div>
+    </div>
+    </body>
+</html>
